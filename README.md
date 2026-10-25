@@ -26,3 +26,5 @@ pnpm build
 ## Credits
 
 Adapted for Tezbar from Raycast's MIT-licensed `oklch-color-converter` extension at upstream commit `6734d85992290066fd31a7f5bee3cca3d3545a1a`. Original author `strongeron` remains credited in `package.json`.
+
+[Native V2 (Rust) implementation and integration](v2/README.md)

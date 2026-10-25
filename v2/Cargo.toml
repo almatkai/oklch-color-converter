@@ -1,0 +1,22 @@
+[package]
+name = "tezbar-oklch-color-converter"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+license = "MIT"
+description = "Offline Native V2 port of strongeron's OKLCH Color Converter"
+repository = "https://github.com/almatkai/oklch-color-converter"
+include = ["src/**", "examples/**", "adapter/**", "tests/**", "fixtures/**", "scripts/**", "integration/**", "harness/src/**", "harness/tests/**", "harness/examples/**", "harness/build.rs", "harness/Cargo.toml.in", "harness/Cargo.lock", "harness/.gitignore", "licenses/**", "assets/**", "/extension-v2.json", "/provenance.json", "/README.md", "/VALIDATION.md", "/NOTICES.md", "/Cargo.toml", "/Cargo.lock", "/LICENSE*", "/.gitignore"]
+
+[dependencies]
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.145"
+regex = "=1.12.2"
+ryu-js = "=1.0.2"
+libm = "=0.2.15"
+
+[dev-dependencies]
+tokio = { version = "=1.47.1", features = ["macros", "rt-multi-thread", "sync", "time"] }
+tempfile = "=3.23.0"
+uuid = { version = "=1.18.1", features = ["v4"] }
+log = "=0.4.28"

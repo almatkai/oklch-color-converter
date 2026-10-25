@@ -1,0 +1,108 @@
+--- a/src-tauri/src/native_core/extensions/mod.rs
++++ b/src-tauri/src/native_core/extensions/mod.rs
+@@ -14,6 +14,8 @@
+ mod v2_port_manager;
+ mod v2_runtime;
+ mod v2_sdk;
++#[path = "../../../native-extensions/oklch-color-converter/adapter/oklch.rs"]
++mod v2_oklch;
+ mod v2_speedtest;
+ mod v2_timers;
+ 
+--- a/src-tauri/src/native_core/extensions/v2_runtime.rs
++++ b/src-tauri/src/native_core/extensions/v2_runtime.rs
+@@ -10,7 +10,7 @@
+     match value {
+         "amphetamine" | "audio-device" | "cleanshotx" | "color-picker" | "gif-search"
+         | "google-calendar" | "google-search" | "port-manager" | "speedtest" | "timers"
+-        | "perplexity" => Some(value),
++        | "perplexity" | "oklch-color-converter" => Some(value),
+         _ => None,
+     }
+ }
+@@ -30,6 +30,7 @@
+         "speedtest" => super::v2_speedtest::commands(),
+         "timers" => super::v2_timers::commands(),
+         "perplexity" => super::v2_perplexity::commands(),
++        "oklch-color-converter" => super::v2_oklch::commands(),
+         _ => &[],
+     }
+ }
+@@ -68,6 +69,7 @@
+         "speedtest" => super::v2_speedtest::handle(ctx, command, operation, payload, state).await,
+         "timers" => super::v2_timers::handle(ctx, command, operation, payload, state).await,
+         "perplexity" => super::v2_perplexity::handle(ctx, command, operation, payload, state).await,
++        "oklch-color-converter" => super::v2_oklch::handle(ctx, command, operation, payload, state).await,
+         _ => Err(format!("No native adapter for {slug}")),
+     }
+ }
+--- a/src-tauri/Cargo.toml
++++ b/src-tauri/Cargo.toml
+@@ -21,6 +21,7 @@
+ semver = "1.0"
+ 
+ [dependencies]
++tezbar-oklch-color-converter = { path = "native-extensions/oklch-color-converter" }
+ serde_json = "1.0"
+ serde = { version = "1.0", features = ["derive"] }
+ semver = "1.0"
+--- a/src-tauri/src/native_core/extensions/v2_catalog.json
++++ b/src-tauri/src/native_core/extensions/v2_catalog.json
+@@ -2589,5 +2589,46 @@
+         "state": "not-run"
+       }
+     ]
++  },
++  {
++    "schemaVersion": 2,
++    "id": "com.tezbar.native.oklch-color-converter",
++    "slug": "oklch-color-converter",
++    "name": "OKLCH Color Converter",
++    "version": "0.1.0",
++    "description": "Convert colors between formats with wide gamut support. Native port of the original extension by strongeron.",
++    "icon": "/extensions/icons/oklch-color-converter.png",
++    "runtime": "rust",
++    "replaces": [
++      "raycast.oklch-color-converter"
++    ],
++    "platforms": [
++      "macOS",
++      "Windows"
++    ],
++    "commands": [
++      {
++        "name": "convert-color",
++        "title": "Convert Color",
++        "description": "Convert colors between different color spaces and formats",
++        "platforms": [
++          "macOS",
++          "Windows"
++        ],
++        "runtime": "rust"
++      }
++    ],
++    "verification": [
++      {
++        "platform": "macOS",
++        "state": "not-run",
++        "note": "Isolated Rust and contract tests only; host registration/rebuild, real OS, UI and color-profile QA not run."
++      },
++      {
++        "platform": "Windows",
++        "state": "not-run",
++        "note": "Cross compilation is not Windows execution; real OS, UI and color-profile QA not run."
++      }
++    ]
+   }
+ ]
+--- a/src-tauri/src/native_core/extensions/v2_catalog.rs
++++ b/src-tauri/src/native_core/extensions/v2_catalog.rs
+@@ -169,7 +169,7 @@
+     #[test]
+     fn bundled_ids_and_coverage_are_consistent() {
+         let items = manifests();
+-        assert_eq!(items.len(), 11);
++        assert_eq!(items.len(), 12);
+         for item in items {
+             let slug = item["slug"].as_str().unwrap();
+             assert_eq!(item["id"], v2_runtime::canonical_id(slug));

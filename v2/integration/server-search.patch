@@ -1,0 +1,11 @@
+--- a/src/renderer/src/raycast-api/list-runtime.tsx
++++ b/src/renderer/src/raycast-api/list-runtime.tsx
+@@ -510,7 +510,7 @@
+   )
+   const hasServerSearch = onSearchTextChanged !== undefined && root.props?.__hasServerSearch === true
+   const hasMore = root.props?.__hasMore === true
+-  const isColorConversionSurface = isColorConversionCommand(commandName, title, navigationTitle)
++  const isColorConversionSurface = !hasServerSearch && isColorConversionCommand(commandName, title, navigationTitle)
+   const hasManySearchOptions = (searchAccessory?.options.length ?? 0) > 4
+   const hasSearchPlaceholder =
+     typeof root.props?.searchBarPlaceholder === 'string' &&

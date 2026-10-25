@@ -1,0 +1,11 @@
+/target/
+/node_modules/
+/validation-output/
+# The original root ignores dist/. Oracle fixtures, if any, must remain visible.
+!fixtures/**/dist/
+!fixtures/**/dist/**
+# Offline full JSON Schema 2020-12 validator (test-only immutable npm fixtures).
+!fixtures/validators/node_modules/
+!fixtures/validators/node_modules/**
+!fixtures/**/dist/
+!fixtures/**/dist/**
