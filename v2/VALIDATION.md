@@ -1,0 +1,33 @@
+# Validation record
+
+Date: 2026-10-25. Selected clone: `rust-extension-ports/oklch-color-converter`; branch `feat/native-v2-rust`, based on freshly fetched `origin/main` at **`cc5022de97787bf2b9bf8f09be41242aa73f98fb`**. No commits, staging, pushes or PRs. Only new `v2/` files and the allowed root README discovery link. No host/profile/clipboard/focus/paste/ledger changes.
+
+## Source and oracle
+
+- Complete own command, helper sources, manifest, original lock and tests inspected. The behavioral reference is own source + **locked Culori 3.3.0**. Upstream author/manifest/icon/license evidence was fetched at Raycast pin **`6734d85992290066fd31a7f5bee3cca3d3545a1a`**.
+- The unchanged own TSX runs through locked TypeScript 5.9.3 transpilation with only helper exports appended. A hook/element harness replaces React scheduling and Raycast components, capturing the actual rendered rows, swatches, tags, copy contents, action labels and source shortcut declarations. Actual locked Culori performs every JS conversion. This is isolated source execution, not real desktop rendering.
+- **897 oracle inputs** cover modern/legacy CSS; every named color; all custom color profiles; missing coordinates; alpha including decimal boundaries; Figma P3 quirks; sRGB/P3 gamut/epsilon boundaries; transfer thresholds; nonparseable vec round trips; the five hardcoded vec references plus their empty-string annulus; seeded inputs and extreme finite magnitudes. Three separate non-finite cases record the source's NaN/Infinity artifacts with a bounded subprocess watchdog. Native rejects those inputs safely.
+- **878/897 inputs exactly match every ColorData field.** The other **19** have **22** explicitly recorded formatted-value differences: unstable HSL hue near achromatic/0–360 boundaries and final digits at extreme finite magnitudes. The test accepts only the exact source/native pairs listed in `fixtures/oracle/numeric-deviations.json`; any new difference fails. All corpus parsing decisions, ordering, gamut tags, preview hex and hex-copy outputs agree. This is not universal exactness or verified Windows numeric parity.
+- Independent Rust assertions check bare hex versus Figma P3, alpha loss/preservation quirks, double-linearization, internal helper formats, invalid input, finite input limits and JS fixed-point rounding.
+
+## Concrete adapter and beta contracts
+
+- Six integration tests compile the real adapter with unchanged pinned `v2_sdk.rs`, `common.rs` and production `NativeSessions` plus registration-only changes to pinned runtime dispatch. Tauri event emission, installation policy and unrelated adapters are explicit stubs. The host's original unrelated unit-test module is not compiled into this production-fixture harness.
+- Tests exercise the actual IPC lifecycle, canonical/Raycast/bare-slug dispatch, empty launch, server search, row/action order, swatches/tags, committed copy binding, stale/forged/cross-session capabilities, discarded search clones, refresh clone immutability, disposal, typed-state corruption, input bounds, malformed/contradictory acknowledgements, sanitized transport failures, cancellation after intent and deliberate retry. Prior acknowledged actions survive a later uncertain copy.
+- The actual pinned beta ListRuntime parser/swatch/menu/reconciliation code executes in an isolated hook/tree harness. The original generic converter override is reproduced; the separate required `server-search.patch` is applied only in memory for the passing checks. Real adapter view data drives the tests. No controlled searchText response is sent, preserving a newer pending local draft. Enter/click and both action menu choices bind to committed IDs. Arbitrary source shortcuts are unsupported and not advertised.
+- Full original schema 2020-12 validated by immutable Ajv 8.17.1 fixtures: valid manifest, ten negative cases, canonical ID/replacement/command/verification invariants and exact icon size/hash. Root author is intentionally absent because the schema rejects it.
+
+## Commands and outcomes
+
+- Disposable V1 `npm ci --legacy-peer-deps`, `npm test`: **5 passed**; `npm run typecheck`: **passed**. Original lock hash remained unchanged. npm reported its existing audit findings (2 low, 1 high) and blocked install-script notices; dependencies were not changed to repair them.
+- Stable aarch64 macOS: `./scripts/validate.sh` — **passed**. Three core Rust tests, six concrete adapter/session tests, Rust formatting, strict all-target Clippy, executable source oracle, beta renderer contracts, full schema/icon and immutable provenance verification.
+- Rust **1.85.0**, aarch64 macOS: locked offline core/harness tests and strict all-target Clippy — **passed**.
+- Stable `x86_64-pc-windows-gnu`: locked offline `cargo check` and strict all-target `cargo clippy`, for both core and concrete beta harness — **passed**. **No Windows binary was executed.**
+- Cargo package, archive contents/visibility audit, and extracted self-contained offline `scripts/validate.sh` — **passed**. The included harness manifest is a template because Cargo otherwise excludes nested packages. Host Cargo manifest evidence uses `.fixture` for the same reason. The archive includes all immutable fixtures, the offline validator's `dist` files, original icon and test code; it excludes `target` and validation scratch output. No absolute local host paths are required by extracted tests. A populated Cargo cache is required; Node/Python tests need no npm install/network.
+- `provenance.json`: **793 immutable file paths with byte size and SHA256**, verified; original icon 202561 bytes, SHA256 **`8bcde32c4dc7b94a8e119d3576153f34aee95bd416f937b2b93c8b56471af1e9`**. Git visibility was audited without staging, including explicitly unignored node_modules/dist fixtures.
+
+## Search and remaining QA
+
+The required XERJ skill was read. Canonical clone-root prefix: **`ax-8d26589ad40f`**. Owned indexing hit HTTP 429, with the server reporting RSS 1090 MB against the 768 MB watermark. The owned indexing process was stopped; global service/schema were not changed. XERJ returned no reliable indexed match. Coverage is incomplete; complete current-file reads and exact `rg` checks supplied the review evidence.
+
+**NOT-RUN:** host registration, host rebuild, real installed catalog/alias policy, real macOS/Windows UI, OS clipboard, display/color profiles, shortcut/focus/hide behavior and desktop accessibility. Both manifest verification entries remain `not-run`. The renderer prerequisite and registration patches require parent review and host integration. No host Markdown/window acknowledgement changes are required by this adapter because it uses neither surface.

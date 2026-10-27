@@ -1,0 +1,50 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "id": "com.tezbar.oklch-color-converter",
+  "name": "oklch-color-converter",
+  "title": "OKLCH Color Converter",
+  "description": "Convert colors between formats with wide gamut support",
+  "icon": "icon.png",
+  "author": "almatkai",
+  "contributors": ["strongeron"],
+  "categories": ["Design Tools"],
+  "license": "MIT",
+  "platforms": ["macOS", "Windows"],
+  "commands": [
+    {
+      "name": "convert-color",
+      "title": "Convert Color",
+      "subtitle": "OKLCH Color Converter",
+      "description": "Convert colors between different color spaces and formats",
+      "mode": "view",
+      "platforms": ["macOS", "Windows"]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.1",
+    "culori": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "version": "0.1.0",
+  "tezbar": {
+    "schemaVersion": 1,
+    "platforms": ["macos", "windows"],
+    "linuxStatus": "coming-soon",
+    "repository": "https://github.com/almatkai/oklch-color-converter",
+    "upstream": {
+      "repository": "https://github.com/raycast/extensions",
+      "path": "extensions/oklch-color-converter",
+      "commit": "6734d85992290066fd31a7f5bee3cca3d3545a1a"
+    }
+  }
+}

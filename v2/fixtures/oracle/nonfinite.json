@@ -1,0 +1,1820 @@
+[
+  {
+    "input": "rgb(1e999 0 0)",
+    "original": [
+      {
+        "input": "rgb(1e999 0 0)",
+        "data": [
+          {
+            "format": "figmaP3",
+            "value": "#NANNANNANFF",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "p3 fallback"
+          },
+          {
+            "format": "oklch",
+            "value": "oklch(NaN00% NaN000 0.00)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "out of p3"
+          },
+          {
+            "format": "p3",
+            "value": "color(display-p3 NaN000 NaN000 NaN000)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "p3 fallback"
+          },
+          {
+            "format": "oklab",
+            "value": "oklab(NaN% NaN NaN)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "out of p3"
+          },
+          {
+            "format": "vec",
+            "value": "vec(Infinity, 0.00000, 0.00000, 1.00000)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "p3 fallback"
+          },
+          {
+            "format": "hex",
+            "value": "#NANNANNAN",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb fallback"
+          },
+          {
+            "format": "rgb",
+            "value": "rgb(NaN, NaN, NaN)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb fallback"
+          },
+          {
+            "format": "hsl",
+            "value": "hsl(NaN NaN% NaN%)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb fallback"
+          }
+        ],
+        "rendered": {
+          "type": "List",
+          "props": {
+            "isLoading": false,
+            "searchBarPlaceholder": "Enter color...",
+            "navigationTitle": "Color Converter",
+            "throttle": true,
+            "searchText": "rgb(1e999 0 0)"
+          },
+          "children": [
+            {
+              "type": "List.Section",
+              "props": {},
+              "children": [
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 0,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "#NANNANNANFF",
+                    "subtitle": "figmaP3",
+                    "accessories": [
+                      {
+                        "text": "p3 fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 1,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "oklch(NaN00% NaN000 0.00)",
+                    "subtitle": "oklch",
+                    "accessories": [
+                      {
+                        "text": "out of p3"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "oklch(NaN00% NaN000 0.00)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 2,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "color(display-p3 NaN000 NaN000 NaN000)",
+                    "subtitle": "p3",
+                    "accessories": [
+                      {
+                        "text": "p3 fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "color(display-p3 NaN000 NaN000 NaN000)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 3,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "oklab(NaN% NaN NaN)",
+                    "subtitle": "oklab",
+                    "accessories": [
+                      {
+                        "text": "out of p3"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "oklab(NaN% NaN NaN)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 4,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "vec(Infinity, 0.00000, 0.00000, 1.00000)",
+                    "subtitle": "vec",
+                    "accessories": [
+                      {
+                        "text": "p3 fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "vec(Infinity, 0.00000, 0.00000, 1.00000)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 5,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "#NANNANNAN",
+                    "subtitle": "hex",
+                    "accessories": [
+                      {
+                        "text": "srgb fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "#NANNANNAN",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 6,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "rgb(NaN, NaN, NaN)",
+                    "subtitle": "rgb",
+                    "accessories": [
+                      {
+                        "text": "srgb fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "rgb(NaN, NaN, NaN)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 7,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "hsl(NaN NaN% NaN%)",
+                    "subtitle": "hsl",
+                    "accessories": [
+                      {
+                        "text": "srgb fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "hsl(NaN NaN% NaN%)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "toasts": []
+      }
+    ],
+    "nativePolicy": "explicit non-finite input error"
+  },
+  {
+    "input": "rgb(0 0 0 / -1e999)",
+    "original": [
+      {
+        "input": "rgb(0 0 0 / -1e999)",
+        "data": [
+          {
+            "format": "figmaP3",
+            "value": "#00000000",
+            "hexValue": "#00000000",
+            "gamut": "srgb",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb"
+          },
+          {
+            "format": "oklch",
+            "value": "oklch(0.000% 0.0000 0.00)",
+            "hexValue": "#00000000",
+            "gamut": "srgb",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb"
+          },
+          {
+            "format": "p3",
+            "value": "color(display-p3 0.0000 0.0000 0.0000)",
+            "hexValue": "#00000000",
+            "gamut": "srgb",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb"
+          },
+          {
+            "format": "oklab",
+            "value": "oklab(0.00% 0.00 0.0)",
+            "hexValue": "#00000000",
+            "gamut": "srgb",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb"
+          },
+          {
+            "format": "vec",
+            "value": "vec(0.00000, 0.00000, 0.00000, -Infinity)",
+            "hexValue": "#00000000",
+            "gamut": "srgb",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb"
+          },
+          {
+            "format": "hex",
+            "value": "#000000",
+            "hexValue": "#00000000",
+            "gamut": "srgb",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb"
+          },
+          {
+            "format": "rgb",
+            "value": "rgb(0, 0, 0 / -Infinity)",
+            "hexValue": "#00000000",
+            "gamut": "srgb",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb"
+          },
+          {
+            "format": "hsl",
+            "value": "hsl(0 0% 0%)",
+            "hexValue": "#00000000",
+            "gamut": "srgb",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb"
+          }
+        ],
+        "rendered": {
+          "type": "List",
+          "props": {
+            "isLoading": false,
+            "searchBarPlaceholder": "Enter color...",
+            "navigationTitle": "Color Converter",
+            "throttle": true,
+            "searchText": "rgb(0 0 0 / -1e999)"
+          },
+          "children": [
+            {
+              "type": "List.Section",
+              "props": {},
+              "children": [
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 0,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#00000000"
+                    },
+                    "title": "#00000000",
+                    "subtitle": "figmaP3",
+                    "accessories": [
+                      {
+                        "text": "srgb"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 1,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#00000000"
+                    },
+                    "title": "oklch(0.000% 0.0000 0.00)",
+                    "subtitle": "oklch",
+                    "accessories": [
+                      {
+                        "text": "srgb"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "oklch(0.000% 0.0000 0.00)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 2,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#00000000"
+                    },
+                    "title": "color(display-p3 0.0000 0.0000 0.0000)",
+                    "subtitle": "p3",
+                    "accessories": [
+                      {
+                        "text": "srgb"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "color(display-p3 0.0000 0.0000 0.0000)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 3,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#00000000"
+                    },
+                    "title": "oklab(0.00% 0.00 0.0)",
+                    "subtitle": "oklab",
+                    "accessories": [
+                      {
+                        "text": "srgb"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "oklab(0.00% 0.00 0.0)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 4,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#00000000"
+                    },
+                    "title": "vec(0.00000, 0.00000, 0.00000, -Infinity)",
+                    "subtitle": "vec",
+                    "accessories": [
+                      {
+                        "text": "srgb"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "vec(0.00000, 0.00000, 0.00000, -Infinity)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 5,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#00000000"
+                    },
+                    "title": "#000000",
+                    "subtitle": "hex",
+                    "accessories": [
+                      {
+                        "text": "srgb"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "#000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 6,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#00000000"
+                    },
+                    "title": "rgb(0, 0, 0 / -Infinity)",
+                    "subtitle": "rgb",
+                    "accessories": [
+                      {
+                        "text": "srgb"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "rgb(0, 0, 0 / -Infinity)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 7,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#00000000"
+                    },
+                    "title": "hsl(0 0% 0%)",
+                    "subtitle": "hsl",
+                    "accessories": [
+                      {
+                        "text": "srgb"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "hsl(0 0% 0%)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#00000000",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "toasts": []
+      }
+    ],
+    "nativePolicy": "explicit non-finite input error"
+  },
+  {
+    "input": "oklch(.5 1e999 0)",
+    "original": [
+      {
+        "input": "oklch(.5 1e999 0)",
+        "data": [
+          {
+            "format": "figmaP3",
+            "value": "#NANNANNANFF",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "p3 fallback"
+          },
+          {
+            "format": "oklch",
+            "value": "oklch(50.00% Infinity 0.00)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "out of p3"
+          },
+          {
+            "format": "p3",
+            "value": "color(display-p3 NaN000 NaN000 NaN000)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "p3 fallback"
+          },
+          {
+            "format": "oklab",
+            "value": "oklab(50.00% Infinity NaN)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "out of p3"
+          },
+          {
+            "format": "vec",
+            "value": "vec(NaN0000, NaN0000, NaN0000, 1.00000)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "p3",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "p3 fallback"
+          },
+          {
+            "format": "hex",
+            "value": "#NANNANNAN",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb fallback"
+          },
+          {
+            "format": "rgb",
+            "value": "rgb(NaN, NaN, NaN)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb fallback"
+          },
+          {
+            "format": "hsl",
+            "value": "hsl(NaN NaN% NaN%)",
+            "hexValue": "#NANNANNANFF",
+            "gamut": "out",
+            "fallbackSpace": "srgb",
+            "warnings": {
+              "unsupported": false,
+              "fallback": false,
+              "outOfGamut": false
+            },
+            "tagText": "srgb fallback"
+          }
+        ],
+        "rendered": {
+          "type": "List",
+          "props": {
+            "isLoading": false,
+            "searchBarPlaceholder": "Enter color...",
+            "navigationTitle": "Color Converter",
+            "throttle": true,
+            "searchText": "oklch(.5 1e999 0)"
+          },
+          "children": [
+            {
+              "type": "List.Section",
+              "props": {},
+              "children": [
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 0,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "#NANNANNANFF",
+                    "subtitle": "figmaP3",
+                    "accessories": [
+                      {
+                        "text": "p3 fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 1,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "oklch(50.00% Infinity 0.00)",
+                    "subtitle": "oklch",
+                    "accessories": [
+                      {
+                        "text": "out of p3"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "oklch(50.00% Infinity 0.00)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 2,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "color(display-p3 NaN000 NaN000 NaN000)",
+                    "subtitle": "p3",
+                    "accessories": [
+                      {
+                        "text": "p3 fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "color(display-p3 NaN000 NaN000 NaN000)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 3,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "oklab(50.00% Infinity NaN)",
+                    "subtitle": "oklab",
+                    "accessories": [
+                      {
+                        "text": "out of p3"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "oklab(50.00% Infinity NaN)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 4,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "vec(NaN0000, NaN0000, NaN0000, 1.00000)",
+                    "subtitle": "vec",
+                    "accessories": [
+                      {
+                        "text": "p3 fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "vec(NaN0000, NaN0000, NaN0000, 1.00000)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 5,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "#NANNANNAN",
+                    "subtitle": "hex",
+                    "accessories": [
+                      {
+                        "text": "srgb fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "#NANNANNAN",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 6,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "rgb(NaN, NaN, NaN)",
+                    "subtitle": "rgb",
+                    "accessories": [
+                      {
+                        "text": "srgb fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "rgb(NaN, NaN, NaN)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                },
+                {
+                  "type": "List.Item",
+                  "props": {
+                    "key": 7,
+                    "icon": {
+                      "source": "Icon.CircleFilled",
+                      "tintColor": "#NANNANNANFF"
+                    },
+                    "title": "hsl(NaN NaN% NaN%)",
+                    "subtitle": "hsl",
+                    "accessories": [
+                      {
+                        "text": "srgb fallback"
+                      }
+                    ]
+                  },
+                  "actions": {
+                    "type": "ActionPanel",
+                    "props": {},
+                    "children": [
+                      {
+                        "type": "ActionPanel.Section",
+                        "props": {},
+                        "children": [
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy Color Value",
+                              "content": "hsl(NaN NaN% NaN%)",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          },
+                          {
+                            "type": "Action.CopyToClipboard",
+                            "props": {
+                              "title": "Copy as Hex",
+                              "content": "#NANNANNANFF",
+                              "shortcut": {
+                                "modifiers": [
+                                  "cmd",
+                                  "shift"
+                                ],
+                                "key": "c"
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "toasts": []
+      }
+    ],
+    "nativePolicy": "explicit non-finite input error"
+  }
+]

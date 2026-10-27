@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "com.tezbar.native.oklch-color-converter",
+  "slug": "oklch-color-converter",
+  "name": "OKLCH Color Converter",
+  "version": "0.1.0",
+  "description": "Convert colors between formats with wide gamut support. Native port of the original extension by strongeron.",
+  "icon": "/extensions/icons/oklch-color-converter.png",
+  "runtime": "rust",
+  "replaces": ["raycast.oklch-color-converter"],
+  "platforms": ["macOS", "Windows"],
+  "commands": [
+    {
+      "name": "convert-color",
+      "title": "Convert Color",
+      "description": "Convert colors between different color spaces and formats",
+      "platforms": ["macOS", "Windows"],
+      "runtime": "rust"
+    }
+  ],
+  "verification": [
+    {"platform": "macOS", "state": "not-run", "note": "Isolated Rust and contract tests only; host registration/rebuild, real OS, UI and color-profile QA not run."},
+    {"platform": "Windows", "state": "not-run", "note": "Cross compilation is not Windows execution; real OS, UI and color-profile QA not run."}
+  ]
+}
